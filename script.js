@@ -15,35 +15,12 @@ function getComputerChoice(){
      return 'scissors'
    }
 }
- 
-const str = round()
- function round() {
-        const computerChoice = getComputerChoice()
-   // console.log(computerChoice);
-    const promptStr = prompt();
-    const playerChoice = promptStr.toLowerCase();
-    
-   
-    if (playerChoice === 'rock' && computerChoice ==='scissors')
-    return console.log("You win, rock beats scissors") + (playerPoints ++) + console.log('You, '+playerPoints+' : Computer, '+computerPoints);
-    else if (playerChoice === 'rock' && computerChoice ==='paper')
-    return console.log("You lose, paper beats rock") + (computerPoints ++) + console.log('You, '+playerPoints+' : Computer, '+computerPoints);
-    else if (playerChoice === 'rock' && computerChoice === 'rock')
-    return console.log("Draw, both picked rock") + round();
-    else if (playerChoice === 'paper' && computerChoice === 'rock')
-    return console.log('You win, paper beats rock') + (playerPoints ++) + console.log('You, '+playerPoints+' : Computer, '+computerPoints);
-    else if (playerChoice === 'paper' && computerChoice=== 'paper')
-    return console.log('Draw, both picked paper') + round ();
-    else if (playerChoice ==='paper' && computerChoice=== 'scissors')
-    return console.log('You lose, scissors beats paper')+ (computerPoints ++) + console.log('You, '+playerPoints+' : Computer, '+computerPoints);
-    else if (playerChoice === 'scissors' && computerChoice=== 'rock')
-    return console.log('You lose, rock  beats scissors')+ (computerPoints ++) + console.log('You, '+playerPoints+' : Computer, '+computerPoints);
-    else if (playerChoice === 'scissors' && computerChoice=== 'paper')
-    return console.log('You win, scissors beats paper') + (playerPoints ++) + console.log('You, '+playerPoints+' : Computer, '+computerPoints);
-    else if (playerChoice === 'scissors' && computerChoice === 'scissors')
-    return console.log('Draw, both picked scissors') + round();
 
-}
+
+
+
+
+ 
 
 function game(){
     if (playerPoints >= 3)
@@ -52,8 +29,10 @@ function game(){
     return "You lost to the computer :(";
 }
 
+
+
+/*round();
 round();
 round();
-round();
-round();
-console.log(game());
+round();*/
+ console.log(game());
